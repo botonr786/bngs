@@ -270,8 +270,7 @@ const userManagment=async(req,res)=>{
 }
 const userdeletecronjob=async(req,res)=>{
     con.query('DELETE FROM users WHERE id="'+1+'"',async(err,result)=>{
-        if(err) return res.json({ack:0, status:409, message:"feed not Deleted"})
-        res.json({ack:1, status:200, message:"deleted success"})
+       console.log("delted success")
       })
 }
 const superAdmin = {
